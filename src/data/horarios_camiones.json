@@ -1,0 +1,364 @@
+{
+    "horarios_camiones": [
+        {
+            "trip_id": 2208474,
+            "hora_salida": "16:01:08",
+            "hora_llegada": "17:47:33",
+            "tiempo_aproximado_viaje": 106
+        },
+        {
+            "trip_id": 2225074,
+            "hora_salida": "13:44:49",
+            "hora_llegada": "16:18:57",
+            "tiempo_aproximado_viaje": 154
+        },
+        {
+            "trip_id": 2149195,
+            "hora_salida": "22:31:26",
+            "hora_llegada": "00:06:53",
+            "tiempo_aproximado_viaje": 95
+        },
+        {
+            "trip_id": 2228368,
+            "hora_salida": "09:57:17",
+            "hora_llegada": "12:17:32",
+            "tiempo_aproximado_viaje": 140
+        },
+        {
+            "trip_id": 2172139,
+            "hora_salida": "18:52:23",
+            "hora_llegada": "18:20:06",
+            "tiempo_aproximado_viaje": 1408
+        },
+        {
+            "trip_id": 2185459,
+            "hora_salida": "05:48:04",
+            "hora_llegada": "06:24:03",
+            "tiempo_aproximado_viaje": 36
+        },
+        {
+            "trip_id": 2222598,
+            "hora_salida": "15:49:43",
+            "hora_llegada": "17:37:18",
+            "tiempo_aproximado_viaje": 108
+        },
+        {
+            "trip_id": 2166566,
+            "hora_salida": "09:36:55",
+            "hora_llegada": "09:26:46",
+            "tiempo_aproximado_viaje": 1430
+        },
+        {
+            "trip_id": 2213585,
+            "hora_salida": "16:36:30",
+            "hora_llegada": "16:57:27",
+            "tiempo_aproximado_viaje": 21
+        },
+        {
+            "trip_id": 2221301,
+            "hora_salida": "14:42:06",
+            "hora_llegada": "16:12:45",
+            "tiempo_aproximado_viaje": 90
+        },
+        {
+            "trip_id": 2188871,
+            "hora_salida": "12:21:36",
+            "hora_llegada": "14:11:56",
+            "tiempo_aproximado_viaje": 110
+        },
+        {
+            "trip_id": 2147561,
+            "hora_salida": "23:49:34",
+            "hora_llegada": "23:59:34",
+            "tiempo_aproximado_viaje": 10
+        },
+        {
+            "trip_id": 2218403,
+            "hora_salida": "00:25:15",
+            "hora_llegada": "00:06:20",
+            "tiempo_aproximado_viaje": 1421
+        },
+        {
+            "trip_id": 2144518,
+            "hora_salida": "02:36:10",
+            "hora_llegada": "05:58:13",
+            "tiempo_aproximado_viaje": 202
+        },
+        {
+            "trip_id": 2218377,
+            "hora_salida": "02:33:09",
+            "hora_llegada": "02:15:50",
+            "tiempo_aproximado_viaje": 1422
+        },
+        {
+            "trip_id": 2205522,
+            "hora_salida": "01:27:06",
+            "hora_llegada": "03:56:44",
+            "tiempo_aproximado_viaje": 149
+        },
+        {
+            "trip_id": 2147399,
+            "hora_salida": "06:00:34",
+            "hora_llegada": "08:52:35",
+            "tiempo_aproximado_viaje": 172
+        },
+        {
+            "trip_id": 2230404,
+            "hora_salida": "08:09:21",
+            "hora_llegada": "10:36:04",
+            "tiempo_aproximado_viaje": 147
+        },
+        {
+            "trip_id": 2138333,
+            "hora_salida": "06:23:15",
+            "hora_llegada": "09:45:44",
+            "tiempo_aproximado_viaje": 202
+        },
+        {
+            "trip_id": 2200293,
+            "hora_salida": "08:13:40",
+            "hora_llegada": "10:18:52",
+            "tiempo_aproximado_viaje": 125
+        },
+        {
+            "trip_id": 2129148,
+            "hora_salida": "00:32:35",
+            "hora_llegada": "01:46:09",
+            "tiempo_aproximado_viaje": 74
+        },
+        {
+            "trip_id": 2208599,
+            "hora_salida": "12:55:53",
+            "hora_llegada": "12:22:24",
+            "tiempo_aproximado_viaje": 1407
+        },
+        {
+            "trip_id": 2187783,
+            "hora_salida": "13:41:37",
+            "hora_llegada": "15:12:36",
+            "tiempo_aproximado_viaje": 91
+        },
+        {
+            "trip_id": 2172128,
+            "hora_salida": "18:45:55",
+            "hora_llegada": "20:29:27",
+            "tiempo_aproximado_viaje": 104
+        },
+        {
+            "trip_id": 2205115,
+            "hora_salida": "18:17:17",
+            "hora_llegada": "18:44:05",
+            "tiempo_aproximado_viaje": 27
+        },
+        {
+            "trip_id": 2211188,
+            "hora_salida": "01:12:26",
+            "hora_llegada": "02:32:20",
+            "tiempo_aproximado_viaje": 80
+        },
+        {
+            "trip_id": 2221517,
+            "hora_salida": "02:36:02",
+            "hora_llegada": "05:50:35",
+            "tiempo_aproximado_viaje": 194
+        },
+        {
+            "trip_id": 2218032,
+            "hora_salida": "02:22:09",
+            "hora_llegada": "02:34:46",
+            "tiempo_aproximado_viaje": 12
+        },
+        {
+            "trip_id": 2206362,
+            "hora_salida": "07:35:21",
+            "hora_llegada": "07:13:08",
+            "tiempo_aproximado_viaje": 1418
+        },
+        {
+            "trip_id": 2136714,
+            "hora_salida": "09:20:29",
+            "hora_llegada": "12:57:25",
+            "tiempo_aproximado_viaje": 217
+        },
+        {
+            "trip_id": 2213832,
+            "hora_salida": "00:39:00",
+            "hora_llegada": "01:21:25",
+            "tiempo_aproximado_viaje": 42
+        },
+        {
+            "trip_id": 2222698,
+            "hora_salida": "21:03:17",
+            "hora_llegada": "00:30:53",
+            "tiempo_aproximado_viaje": 207
+        },
+        {
+            "trip_id": 2204403,
+            "hora_salida": "18:53:39",
+            "hora_llegada": "19:27:45",
+            "tiempo_aproximado_viaje": 34
+        },
+        {
+            "trip_id": 2187290,
+            "hora_salida": "05:43:56",
+            "hora_llegada": "05:01:29",
+            "tiempo_aproximado_viaje": 1398
+        },
+        {
+            "trip_id": 2221535,
+            "hora_salida": "00:02:08",
+            "hora_llegada": "02:12:55",
+            "tiempo_aproximado_viaje": 130
+        },
+        {
+            "trip_id": 2204460,
+            "hora_salida": "16:33:20",
+            "hora_llegada": "18:10:03",
+            "tiempo_aproximado_viaje": 97
+        },
+        {
+            "trip_id": 2136592,
+            "hora_salida": "07:18:27",
+            "hora_llegada": "10:41:31",
+            "tiempo_aproximado_viaje": 203
+        },
+        {
+            "trip_id": 2225170,
+            "hora_salida": "22:38:47",
+            "hora_llegada": "23:27:18",
+            "tiempo_aproximado_viaje": 49
+        },
+        {
+            "trip_id": 2209131,
+            "hora_salida": "04:27:48",
+            "hora_llegada": "04:05:26",
+            "tiempo_aproximado_viaje": 1418
+        },
+        {
+            "trip_id": 2188208,
+            "hora_salida": "10:35:37",
+            "hora_llegada": "13:24:05",
+            "tiempo_aproximado_viaje": 169
+        },
+        {
+            "trip_id": 2198860,
+            "hora_salida": "08:26:26",
+            "hora_llegada": "09:20:54",
+            "tiempo_aproximado_viaje": 54
+        },
+        {
+            "trip_id": 2221182,
+            "hora_salida": "11:32:15",
+            "hora_llegada": "13:58:38",
+            "tiempo_aproximado_viaje": 146
+        },
+        {
+            "trip_id": 2225518,
+            "hora_salida": "22:25:55",
+            "hora_llegada": "00:53:13",
+            "tiempo_aproximado_viaje": 148
+        },
+        {
+            "trip_id": 2209269,
+            "hora_salida": "07:03:32",
+            "hora_llegada": "08:20:04",
+            "tiempo_aproximado_viaje": 77
+        },
+        {
+            "trip_id": 2197403,
+            "hora_salida": "12:36:48",
+            "hora_llegada": "14:55:26",
+            "tiempo_aproximado_viaje": 139
+        },
+        {
+            "trip_id": 2144571,
+            "hora_salida": "08:33:38",
+            "hora_llegada": "08:08:16",
+            "tiempo_aproximado_viaje": 1415
+        },
+        {
+            "trip_id": 2229418,
+            "hora_salida": "16:04:48",
+            "hora_llegada": "17:55:56",
+            "tiempo_aproximado_viaje": 111
+        },
+        {
+            "trip_id": 2199343,
+            "hora_salida": "10:41:01",
+            "hora_llegada": "10:48:06",
+            "tiempo_aproximado_viaje": 7
+        },
+        {
+            "trip_id": 2124624,
+            "hora_salida": "15:45:21",
+            "hora_llegada": "18:03:14",
+            "tiempo_aproximado_viaje": 138
+        },
+        {
+            "trip_id": 2216390,
+            "hora_salida": "09:54:06",
+            "hora_llegada": "09:00:54",
+            "tiempo_aproximado_viaje": 1386
+        },
+        {
+            "trip_id": 2221622,
+            "hora_salida": "15:08:46",
+            "hora_llegada": "17:37:18",
+            "tiempo_aproximado_viaje": 149
+        },
+        {
+            "trip_id": 2207511,
+            "hora_salida": "10:24:48",
+            "hora_llegada": "13:39:46",
+            "tiempo_aproximado_viaje": 195
+        },
+        {
+            "trip_id": 2200295,
+            "hora_salida": "03:03:13",
+            "hora_llegada": "04:46:07",
+            "tiempo_aproximado_viaje": 103
+        },
+        {
+            "trip_id": 2195060,
+            "hora_salida": "23:03:56",
+            "hora_llegada": "01:19:17",
+            "tiempo_aproximado_viaje": 136
+        },
+        {
+            "trip_id": 2231618,
+            "hora_salida": "13:56:46",
+            "hora_llegada": "14:20:35",
+            "tiempo_aproximado_viaje": 24
+        },
+        {
+            "trip_id": 2209175,
+            "hora_salida": "09:08:51",
+            "hora_llegada": "10:40:00",
+            "tiempo_aproximado_viaje": 92
+        },
+        {
+            "trip_id": 2221500,
+            "hora_salida": "01:12:44",
+            "hora_llegada": "02:21:23",
+            "tiempo_aproximado_viaje": 69
+        },
+        {
+            "trip_id": 2229976,
+            "hora_salida": "00:11:12",
+            "hora_llegada": "00:37:07",
+            "tiempo_aproximado_viaje": 26
+        },
+        {
+            "trip_id": 2195058,
+            "hora_salida": "12:09:05",
+            "hora_llegada": "12:53:15",
+            "tiempo_aproximado_viaje": 44
+        },
+        {
+            "trip_id": 2204523,
+            "hora_salida": "04:58:59",
+            "hora_llegada": "07:46:18",
+            "tiempo_aproximado_viaje": 168
+        }
+    ]
+}
