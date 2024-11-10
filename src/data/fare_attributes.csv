@@ -1,0 +1,5 @@
+fare_id,price,currency_type,payment_method,transfers,agency_id
+G,12,MXN,0,0,MID
+A,45,MXN,0,0,MID
+IT,45,MXN,1,0,MID
+IG,12,MXN,0,0,MID
