@@ -4,10 +4,11 @@ exports.handler = async (event, context) => {
     // TODO:
     // Call anal.js
     // Call patrones_movilidad
+    // Call tiempo_espera
     // Call etc
 
 
-    result = {"anals": {}, "patronesMovilidad": {}}
+    result = {"anals": {}, "patronesMovilidad": {}, "tiempoEspera": {}}
 
     return {
         headers: {
