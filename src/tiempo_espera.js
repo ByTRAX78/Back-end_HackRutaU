@@ -15,7 +15,6 @@ fs.createReadStream('./data/stop_times.csv')
 
 function analizarTiemposDeEspera() {
   const tiemposEspera = [];
-  const tiemposPorStopId = {};
 
   // Iterar sobre las filas para calcular los tiempos de espera entre paradas consecutivas
   for (let i = 1; i < stopTimesData.length; i++) {
@@ -26,36 +25,16 @@ function analizarTiemposDeEspera() {
       const tiempoAnterior = convertirATiempo(paradaAnterior.arrival_time);
       const tiempoActual = convertirATiempo(paradaActual.arrival_time);
 
-      const tiempoEspera = (tiempoActual - tiempoAnterior) / 60; // Convertir a minutos
-      if (tiempoEspera > 0) {
-        tiemposEspera.push({
-          stop_id: paradaActual.stop_id,
-          tiempoEspera,
-        });
+      const tiempoEspera = tiempoActual - tiempoAnterior;
+      tiemposEspera.push({
 
-        // Calcular la diferencia entre horas registradas para el mismo stop_id
-        if (!tiemposPorStopId[paradaActual.stop_id]) {
-          tiemposPorStopId[paradaActual.stop_id] = [];
-        }
-        tiemposPorStopId[paradaActual.stop_id].push(tiempoEspera);
-      }
+        stop_id: paradaActual.stop_id,
+        tiempoEspera,
+      });
     }
   }
 
-  // Calcular el promedio de tiempos de espera entre registros para el mismo stop_id
-  const tiemposEsperaConPromedio = Object.keys(tiemposPorStopId).map((stop_id) => {
-    const tiempos = tiemposPorStopId[stop_id];
-    const tiempoEspera = tiempos[0];
-    const promedioEsperaEntreParadas = tiempos.length > 1 ? (tiempos.reduce((acc, curr) => acc + curr, 0) / tiempos.length) : 0;
-
-    return {
-      stop_id,
-      tiempoEspera,
-      tiempoEsperaEntreParadas: tiempos.length > 1 ? promedioEsperaEntreParadas : 0,
-    };
-  });
-
-  console.log('Tiempos de espera entre paradas con promedio:', tiemposEsperaConPromedio);
+  console.log('Tiempos de espera entre paradas:', tiemposEspera);
 }
 
 function convertirATiempo(hora) {

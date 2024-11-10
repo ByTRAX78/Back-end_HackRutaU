@@ -34,11 +34,4 @@ function analizarDatos() {
   console.log('Nivel de accesibilidad por zona:', nivelAccesibilidad);
 }
 
-// Funciones adicionales para realizar cálculos de análisis
-function calcularAccesibilidad(feature) {
-  // Aquí podrías usar funciones de turf para calcular distancias y accesibilidad
-  // por ejemplo, evaluar si las áreas marginadas tienen acceso cercano a
-  // paradas de transporte público.
-  return turf.distance(feature.geometry.coordinates, [/* coordenadas de referencia */]);
-}
-//pendiente
+
