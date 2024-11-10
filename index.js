@@ -6,10 +6,17 @@ const obtenerTiemposDeEspera = require('./src/tiempo_espera');
 exports.handler = async (event, context) => {
     console.log("Main Index");
 
-    const resultAgeb = await obtenerDatosAgeb();
-    const resultGastos = await obtenerGastosPorMunicipio();
-    const resultPatrones = await obtenerPatronesMovilidad();
-    let resultTiempoEspera = await obtenerTiemposDeEspera();
+    const results = await Promise.all([
+        obtenerDatosAgeb(),
+        obtenerGastosPorMunicipio(),
+        obtenerPatronesMovilidad(),
+        obtenerTiemposDeEspera()
+    ]).then();
+
+    const resultAgeb = results[0];
+    const resultGastos = results[1];
+    const resultPatrones = results[2];
+    let resultTiempoEspera = results[3];
     resultTiempoEspera = resultTiempoEspera.splice(0, 100)
 
     result = {
