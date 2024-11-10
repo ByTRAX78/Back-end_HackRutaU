@@ -1,8 +1,12 @@
 node_modules
 package-lock.json
+.DS_Store
 
 .env
 event.json
 deploy.env
 context.json
 event_sources.json
+
+hack_aty.zip
+hack_aty
