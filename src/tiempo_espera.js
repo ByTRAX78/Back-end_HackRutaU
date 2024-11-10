@@ -1,13 +1,13 @@
 const fs = require('fs');
 const csv = require('csv-parser');
 
-async function obtenerTiemposDeEspera() {
+module.exports = async () => {
   // Leer los datos de las paradas desde el archivo CSV
   const stopTimesData = [];
 
   // Función para cargar datos desde el CSV
   await new Promise((resolve, reject) => {
-    fs.createReadStream('./data/stop_times.csv')
+    fs.createReadStream('./src/data/stop_times.csv')
       .pipe(csv())
       .on('data', (row) => {
         stopTimesData.push(row);
@@ -46,7 +46,7 @@ async function obtenerTiemposDeEspera() {
     }
   }
 
-  return { tiempos_espera: tiemposEspera };
+  return tiemposEspera;
 }
 
 // Función auxiliar para convertir el tiempo en segundos

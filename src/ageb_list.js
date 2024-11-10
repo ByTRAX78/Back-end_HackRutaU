@@ -1,17 +1,17 @@
 const fs = require('fs');
 const csv = require('csv-parser');
 
-async function obtenerDatosAgeb() {
+module.exports = async () => {
   // Cargar los archivos geojson
-  const aforoData = JSON.parse(fs.readFileSync('./files/aforo.geojson', 'utf8'));
-  const censoData = JSON.parse(fs.readFileSync('./files/censo-2020.geojson', 'utf8'));
-  const marginacionGeoJSON = JSON.parse(fs.readFileSync('./data/imu-2020.geojson', 'utf8'));
+  const aforoData = JSON.parse(fs.readFileSync('./src/files/aforo.geojson', 'utf8'));
+  const censoData = JSON.parse(fs.readFileSync('./src/files/censo-2020.geojson', 'utf8'));
+  const marginacionGeoJSON = JSON.parse(fs.readFileSync('./src/data/imu-2020.geojson', 'utf8'));
 
   // Leer datos de ingresos y gastos de los hogares (ENIGH)
   const enighData = [];
 
   await new Promise((resolve, reject) => {
-    fs.createReadStream('./data/enigh.csv')
+    fs.createReadStream('./src/data/enigh.csv')
       .pipe(csv())
       .on('data', (row) => {
         enighData.push(row);
@@ -70,6 +70,6 @@ async function obtenerDatosAgeb() {
     }
   });
 
-  return { ageb_list: joinedResults };
+  return joinedResults;
 }
 

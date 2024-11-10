@@ -1,12 +1,12 @@
 const fs = require('fs');
 const csv = require('csv-parser');
 
-async function obtenerGastosPorMunicipio() {
+module.exports = async () => {
     let gastosPorMunicipio = [];
 
     // Función para leer y procesar el archivo ENIGH
     await new Promise((resolve, reject) => {
-        fs.createReadStream('./data/enigh.csv')
+        fs.createReadStream('./src/data/enigh.csv')
             .pipe(csv())
             .on('data', (row) => {
                 // Extrae solo los datos de gasto público por municipio
@@ -25,6 +25,6 @@ async function obtenerGastosPorMunicipio() {
     });
 
     // Formato JSON con el título "gastos_por_municipio"
-    return { gastos_por_municipio: gastosPorMunicipio };
+    return gastosPorMunicipio;
 }
 

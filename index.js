@@ -1,14 +1,23 @@
+const obtenerDatosAgeb = require('./src/ageb_list');
+const obtenerGastosPorMunicipio = require('./src/gatos_municipio');
+const obtenerPatronesMovilidad = require('./src/patrones_movilidad');
+const obtenerTiemposDeEspera = require('./src/tiempo_espera');
+
 exports.handler = async (event, context) => {
     console.log("Main Index");
 
-    // TODO:
-    // Call anal.js
-    // Call patrones_movilidad
-    // Call tiempo_espera
-    // Call etc
+    const resultAgeb = await obtenerDatosAgeb();
+    const resultGastos = await obtenerGastosPorMunicipio();
+    const resultPatrones = await obtenerPatronesMovilidad();
+    let resultTiempoEspera = await obtenerTiemposDeEspera();
+    resultTiempoEspera = resultTiempoEspera.splice(0, 100)
 
-
-    result = {"anals": {}, "patronesMovilidad": {}, "tiempoEspera": {}}
+    result = {
+        "ageb_list": resultAgeb,
+        "gastos_por_municipio": resultGastos,
+        "patrones_movilidad": resultPatrones,
+        "tiempos_espera": resultTiempoEspera
+    }
 
     return {
         headers: {

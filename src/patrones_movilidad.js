@@ -1,15 +1,15 @@
 const fs = require('fs');
 const csv = require('csv-parser');
 
-async function obtenerPatronesMovilidad() {
+module.exports = async () => {
   // Cargar datos geojson del censo y de marginación
-  const censoGeoJSON = JSON.parse(fs.readFileSync('./data/censo-2020.geojson'));
+  const censoGeoJSON = JSON.parse(fs.readFileSync('./src/data/censo-2020.geojson'));
 
   // Leer datos de ingresos y gastos de los hogares (ENIGH)
   const enighData = [];
 
   await new Promise((resolve, reject) => {
-    fs.createReadStream('./data/enigh.csv')
+    fs.createReadStream('./src/data/enigh.csv')
       .pipe(csv())
       .on('data', (row) => {
         enighData.push(row);
@@ -46,7 +46,6 @@ async function obtenerPatronesMovilidad() {
     return null; // Retornar null si alguno de los valores es null
   }).filter(item => item !== null); // Filtrar los resultados nulos
 
-  const jsonOutput = { patrones_movilidad: patronesMovilidad };
-  return jsonOutput;
+  return patronesMovilidad
 }
 

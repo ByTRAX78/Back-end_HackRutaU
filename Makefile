@@ -7,5 +7,4 @@ build-package:
 	@cp ./index.js ./package.json ./package-lock.json ./temporary_directory/;
 	@(cd ./temporary_directory && zip -r hack_aty.zip ./*);
 	@mv hack_aty.zip ../
-	@cd ..
 	@rm -r ./temporary_directory;
